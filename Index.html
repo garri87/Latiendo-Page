@@ -1,32 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Latiendo Distinto</title>
     <meta name="description" content="Página oficial de Latiendo Distinto">
     <meta name="author" content="Pablo Flores">
     <meta name="keywords" content="Latiendo,Distinto">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
     <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
+    
+    <header id="Navigation" class="nav">
+        <div class="logo">
+            <h2>LATIENDO</h2>
+            <h1>distinto</h1>
+        </div>
+        
+        <script src="Nav.js"></script>
 
 
+    </header>
+    
 
-<div class="main">
-    <script src="Nav.js"></script>
-    <div class="imageItems">
-        <img src="Img/Augusto.png" alt="">
-        <img src="Img/valentin.png" alt="">
-        <img src="Img/Mariposas.png" alt="">
-        <img src="Img/Alfonsina.png" alt="">
-        <img src="Img/bruna.png" alt="">
-        <img src="Img/Colibri.png" alt="">
-        <img src="Img/Antonella.png" alt="">
+   
+   
+
+
+    <div class="main">
+
+        <div class="">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Img/Antonella.jpeg" class="w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Img/Alfonsina.jpeg" class="w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Img/bruna.jpeg" class="w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <div class="defaultBox">
+            <h2><b>Quiénes somos</b> </h2>
+            <p>
+                Latiendo distinto es un espacio que surge
+                gracias a un grupo de madres en duelo, que
+                busca visibilizar la muerte gestacional y
+                perinatal. <br>
+                Es una tribu de mujeres abrazadas por el
+                dolor, y unidas por el amor que a través de
+                encuentros y distintas acciones intenta
+                trasformar ese dolor.
+            </p>
+        </div>
+
+        <div class="defaultBox">
+            <h2><b>Nuestra misión</b> </h2>
+            <p>
+                De estas muertes no se habla y socialmente
+                a lo largo de la historia se ha enseñado a
+                silenciar a madres y padres, desalojando los
+                espacios del niño o niña fallecidos, sumando
+                más dolor al dolor. <br>
+                Nosotras queremos contar que esos bebés
+                son deseados y amados, necesitan ser
+                nombrados y las madres y padres, necesitan
+                ser escuchados y acompañados. <br>
+                Por esto, hoy queremos darles algunas
+                recomendaciones para cambiar las cosas y
+                evitar sumar más dolor a las familias.
+            </p>
+
+        </div>
+
     </div>
-</div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

@@ -1,30 +1,22 @@
 
-    const header = document.createElement("header");
-   
+    const header = document.getElementById('Navigation');
+      
 
-    header.setAttribute("id", "Navigation");
-    
-    const logo = document.createElement("h1");
-    logo.setAttribute("class","logo");
-    logo.innerHTML = "Latiendo Distinto";
     const nav = document.createElement("nav");
     const inicio = createNavLink("Inicio");
-    const nosotres = createNavLink("Nosotros");
+    const quienes = createNavLink("Quienes Somos");
     const novedades = createNavLink("Novedades");
-    const historias = createNavLink("Historias");
+    const relatos = createNavLink("Relatos");
     const Contacto = createNavLink("Contacto");
     
     inicio.setAttribute("href", "index.html");
-    nosotres.setAttribute("href", "");
+    quienes.setAttribute("href", "");
     
-
-    document.body.appendChild(header);
-    header.appendChild(logo);
     header.appendChild(nav);
     nav.appendChild(inicio);
-    nav.appendChild(nosotres);
-    nav.appendChild(novedades = createNavLink(");
-    nav.appendChild(historias);
+    nav.appendChild(quienes);
+    nav.appendChild(novedades);
+    nav.appendChild(relatos);
     nav.appendChild(Contacto);
 
 function createNavLink(title) {
