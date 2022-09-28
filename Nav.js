@@ -1,5 +1,5 @@
 
-    const header = document.getElementById('Navigation');
+    const header = document.getElementById('navigation');
       
 
     const nav = document.createElement("nav");

@@ -1,133 +1,211 @@
+/* color logo: #aad3d5;*/
 
- /* color logo: #aad3d5;*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+body {
+   margin:0%; 
+}
 
- body{
-    
-    background-color: rgb(227 240 241);
-   
- }
- 
- html{
-     scroll-behavior: smooth;
- }
- 
- #Navigation{
- display: grid;
- grid-template-columns: 20% 80%;
- position: sticky;
- align-items: center;
- top: 0px;  
- width: 100%;
- height: 100%;
- background-color:rgb(0 179 154);
- 
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- text-align: right;
- 
- border-bottom: 2px solid;
- border-color: rgba(22, 22, 22, 0.2);
- }
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-image: url(Img/dream-sky-677383.jpg);
+    animation-name: fadeIn;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
 
- .logo{
-    
-    display: grid;
-    width: 100%;
-    padding: 2%;
+.Portada{
+    display: inline-flex;
     align-items: center;
+   margin: 0px;
+   width: 100vw;
+   height: 100vh;
+   animation-name: fadeIn;
+   animation-duration: 5s;
+   animation-fill-mode: forwards;
+}
+.Portada img{
+    width: 100%;
+    overflow: hidden;
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .Portada img{
+        width: 100%;
+        overflow: hidden;
+    
+    }   
+}
+
+#navigation {          
+    display: inline-flex;
+    align-items: center;
+    
+    top: 0px;
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(178 178 178 / 91%);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 2px solid;
+    border-color: rgba(22, 22, 22, 0.2);
+    animation-name: fadeIn;
+   animation-duration: 6s;
+   animation-fill-mode: forwards;
+}
+
+nav{
+    display: inline-flex;
+    text-align: right;
+    width: 100%;
+    gap: 4%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2%;
+
+}
+
+.Logo {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    margin-left: 5%;
+    height: 45px;
     text-align: center;
- }
 
- .logo h2{
+}
+
+.Logo img{
+    height: 100%;
+    width: 100%;
+    margin: 5%;
+    max-height: 100px;
+}
+
+.Logo h2 {
     font-family: 'Courier Prime', monospace;
-    font-size: 80%;
- }
+    height: 100%;
+    margin: 0%;
+    font-size: 100%;
+}
 
- .logo h1{
+.Logo h1 {
     font-family: 'Sacramento', cursive;
-    font-size: 250%;
- }
- 
- a{
-     color: #000000;
-     margin: 1%;
-     text-decoration: none;
-     padding: 1%;
- }
- 
- a:hover{
-     background-color: white;
- }
- 
-.main{
+    height: 100%;
+    margin: 0%;
+
+}
+
+
+
+a {
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+}
+
+.main {
     display: grid;
     grid-template-columns: 100%;
-    width: 90%;
-    gap: 2%;
-   
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    align-content: center;
 }
 
- .defaultBox{
-    background-color: white;
+.DefaultBox {
     
- }
+    margin: 1%;
+    background-size: cover;
+    min-height: 100px;
+    min-width: 400px;
+    max-width: 1920px;
+    border-radius: 5%;
+    
+}
 
- .defaultBox h2{
+.DefaultBoxContent{ 
+    display: inline-flex;
+    align-items: center;
+    background-color:rgb(33 33 33 / 84%);
+    width: 100%;
+    text-align: justify;
+}
+
+.BoxImg img{
+    width: 50vw;
+}
+
+
+.DefaultBox h2 {
     font-family: 'Lato', sans-serif;
-    font-size: 150%;
-    color: #196d40;
- }
+    color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
- .defaultBox p{
+.DefaultBox p {
+    color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 150%;
-
-
- }
-
- .carousel{
-
-    display: flex;
- }
-
- 
-
-.nubes{
-    color: #e2e2da;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.DefaultBox img{
+    display: block;
+    text-align: center;
+    background-color: rebeccapurple;
 }
 
-.corazon{
-    color: #e5ce82;
+
+.Formulario{
+
+    width: 40%;
+    background-color:rgb(33 33 33 / 84%);
+    padding: 2%;
+    
+}
+    
+
+.Formulario form{
+    color: white;
+    display: grid;
+    gap: 2%;
+    justify-content: center;
+    grid-template-columns: 90%;
 }
 
-.colibri{
-    color: #75a374;
+.Formulario input{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
-.barrilete{
-    color: #c2d1bc;
+label{
+    font-family: 'Lato', sans-serif;
 }
 
-.montaña{
-    color: #d6dde5;
-}
 
-.rusa{
-    color: #315843;
-}
 
-.mariposas{
-    color: #868597;
-}
 
-.mano{
-    color: #eddec1; 
+@keyframes fadeIn {
+	from {
+		opacity: 0
+	}
+
+	to {
+		opacity: 100%
+	}
+
 }
