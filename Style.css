@@ -14,6 +14,8 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-image: url(Img/dream-sky-677383.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     animation-name: fadeIn;
    animation-duration: 1s;
    animation-fill-mode: forwards;
@@ -36,7 +38,7 @@ html {
     overflow: hidden;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
     .Portada img{
         width: 100vw; 
@@ -47,18 +49,16 @@ html {
 #navigation {          
     display: inline-flex;
     align-items: center;
-    
+    z-index: 1;
     top: 0px;
     position: sticky;
     height: 100%;
     width: 100%;
-    background-color: rgb(178 178 178 / 91%);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(213 201 170);
+    font-family: 'Lato', sans-serif;
     border-bottom: 2px solid;
     border-color: rgba(22, 22, 22, 0.2);
-    animation-name: fadeIn;
-   animation-duration: 6s;
-   animation-fill-mode: forwards;
+    
 }
 
 nav{
@@ -71,7 +71,6 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    padding: 2%;
 
 }
 
@@ -111,12 +110,13 @@ nav{
 
 a {
     text-align: center;
-    color: #000000;
+    color: black;
     text-decoration: none;
+    padding: 2%;
 }
 
 a:hover {
-    background-color: white;
+   color: rgb(46, 46, 46);
 }
 
 .main {
@@ -133,32 +133,35 @@ a:hover {
     min-height: 100px;
     min-width: 400px;
     max-width: 1920px;
-    border-radius: 5%;
+    
     
 }
 
 .DefaultBoxContent{ 
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
     align-items: center;
-    background-color:rgb(33 33 33 / 84%);
     width: 100%;
     text-align: justify;
+    
 }
 
 .BoxImg img{
-    width: 50vw;
+    width: 100%;
+
 }
 
 
 .DefaultBox h2 {
     font-family: 'Lato', sans-serif;
-    color: #ffffff;
+    color: #006b39;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 .DefaultBox p {
-    color: white;
+    color: black;
     font-family: 'Lato', sans-serif;
     padding-left: 5%;
     padding-right: 5%;
@@ -166,21 +169,24 @@ a:hover {
 .DefaultBox img{
     display: block;
     text-align: center;
+    margin-right: -60px;
     background-color: rebeccapurple;
+    clip-path: circle(39% at 50% 50%);
+    z-index: -3;
 }
 
 
 .Formulario{
 
     width: 40%;
-    background-color:rgb(33 33 33 / 84%);
+    background-color: rgba(0, 0, 0, 0.144);
     padding: 2%;
-    
+    margin: 5%;
 }
     
 
 .Formulario form{
-    color: white;
+    color: black;
     display: grid;
     gap: 2%;
     justify-content: center;
@@ -190,6 +196,11 @@ a:hover {
 .Formulario input{
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+}
+
+.Formulario h2{
+    font-family: 'Lato', sans-serif;
+    color: #006b39;
 }
 
 label{
