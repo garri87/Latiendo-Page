@@ -11,13 +11,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
   <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
   <header id="navigation" class="nav">
-    <div class="Logo">
+     <div class="Logo"> 
       <h2>LATIENDO</h2>
       <h1>distinto</h1>
     </div>
@@ -29,11 +28,34 @@
     <img src="Img/LogoFull.png" alt="">
   </div>
 
-  
+
 
   <div class="main">
 
-    <div class="DefaultBox">
+    <div class="Cartelera">
+      <div>
+        <img src="Img/15deoctubre.jpeg" alt="">
+      </div>
+
+      <div>
+        <p>7 millones de bebés mueren en el mundo cada año entre las 28 semanas de gestación y el primer mes de vida.
+          <br>
+          El 15 de Octubre es el día Internacional de concienciación sobre la muerte Gestacional, Perinatal y Neonatal.
+          <br>
+          Desde Latiendo Distinto, impulsamos la visibilización de ésta temática, en una jornada artística a cargo de
+          Mili Mauro, Nerina Wittek, Marisa Pereyra Trevisiol, Ana Cabello y Paula Gilly interviniendo el mural, mates y
+          mucho intercambio de abrazos repletos de amor. <br> <br>
+          @milimauropinturas <br>
+          @nera.wittek <br>
+          @pereyratrevisiol.art <br>
+          @anitacabello_ <br>
+          @cuadros_paulagilly
+        </p>
+      </div>
+    </div>
+
+
+    <div class="DefaultBox" id="quienes">
       <div class="DefaultBoxContent">
         <div class="BoxImg">
           <img src="Img/_PBO2396.jpg" alt="">
@@ -54,7 +76,7 @@
       </div>
     </div>
 
-    <div class="DefaultBox">
+    <div class="DefaultBox" id="mision">
       <div class="DefaultBoxContent">
         <div class="BoxImg">
           <img src="Img/hospiBerisso.jpg" alt="">
@@ -81,25 +103,37 @@
       <br>
       <br>
     </div>
-    <div class="Formulario">
-      <div>
-        <h2>Contactanos</h2>
+
+    
+
+
+
+    <footer class="Footer" id="contacto">
+      <div class="SocialFooter">
+
+        <a href="https://www.facebook.com/profile.php?id=100078851924898"><img src="Img/facebookLogo.png"
+            alt="">Facebook</a>
+
+        <a href="https://www.instagram.com/latiendodistinto/"><img src="Img/instagramLogo.png"
+            alt="">@latiendodistinto</a>
+
+        <a href="https://wa.me/5492215020220"><img src="Img/whatsappLogo.png" alt="">WhatsApp</a>
+
       </div>
 
-      <div>
-        <form action="">
-          <label for="FormNombre">Nombre</label>
+      <div class="Formulario">
+        <h2>Contactanos</h2>
+        <form action="https://formsubmit.co/garri87@hotmail.com" method="POST">
+          <label for="FormNombre"><b>Nombre:</b></label>
           <input type="text" id="formNombre">
 
-          <label for="FormApellido">Apellido</label>
-          <input type="text" id="formApellido">
-
-          <label for="FormTelefono">Telefono</label>
+          <label for="FormTelefono"><b>Telefono:</b></label>
           <input type="text" id="formTelefono">
 
-          <label for="FormCorreo">Correo</label>
+          <label for="FormCorreo"><b>Correo:</b></label>
           <input type="text" id="formCorreo">
           <br>
+          <label for="formMensaje"><b>Mensaje:</b></label>
           <textarea name="formMensaje" id="formMensaje" cols="30" rows="10">Escriba su mensaje</textarea>
           <br>
           <input type="submit" id="submit" name="Enviar">
@@ -111,7 +145,7 @@
 
 
       </form>
-    </div>
+    </footer>
   </div>
 
 </body>

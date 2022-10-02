@@ -5,19 +5,24 @@
     const nav = document.createElement("nav");
     const inicio = createNavLink("Inicio");
     const quienes = createNavLink("Quienes Somos");
+    const mision = createNavLink("Mision");
     const novedades = createNavLink("Novedades");
     const relatos = createNavLink("Relatos");
-    const Contacto = createNavLink("Contacto");
+    const contacto = createNavLink("Contacto");
     
     inicio.setAttribute("href", "index.html");
-    quienes.setAttribute("href", "");
-    
+    quienes.setAttribute("href", "#quienes");
+    mision.setAttribute("href", "#mision");
+    contacto.setAttribute("href", "#contacto");
+
+
     header.appendChild(nav);
     nav.appendChild(inicio);
     nav.appendChild(quienes);
+    nav.appendChild(mision);
     nav.appendChild(novedades);
     nav.appendChild(relatos);
-    nav.appendChild(Contacto);
+    nav.appendChild(contacto);
 
 function createNavLink(title) {
 
