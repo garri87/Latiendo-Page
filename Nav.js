@@ -14,13 +14,15 @@
     quienes.setAttribute("href", "#quienes");
     mision.setAttribute("href", "#mision");
     contacto.setAttribute("href", "#contacto");
+    relatos.setAttribute("href", "Relatos.html");
+    novedades.setAttribute("href", "#novedades");
 
 
     header.appendChild(nav);
     nav.appendChild(inicio);
+    nav.appendChild(novedades);
     nav.appendChild(quienes);
     nav.appendChild(mision);
-    nav.appendChild(novedades);
     nav.appendChild(relatos);
     nav.appendChild(contacto);
 

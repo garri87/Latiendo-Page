@@ -14,8 +14,8 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     background-image: url(Img/dream-sky-677383.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -44,7 +44,7 @@ html {
     border: 2px solid black;
     justify-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 99%;
 
 }
 
@@ -158,6 +158,33 @@ a:hover {
     z-index: -3;
 }
 
+.Relato{
+    background-color: rgba(212, 212, 212, 0.226);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.Relato h2{
+    font-family: 'Lato', sans-serif;
+    color: #006b39;
+}
+
+.Relato img{
+border-radius: 50%;
+border: 2px solid rgb(201, 201, 201);
+
+}
+.Relato img, p{
+    width: 90%;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    font-size: 130%;
+}
 
 .DefaultBox h2 {
     font-family: 'Lato', sans-serif;
@@ -177,10 +204,7 @@ a:hover {
 
 
 
-.Cartelera img {
-    width: 100%;
-    
-}
+
 
 .Cartelera p {
     font-family: 'Lato', sans-serif;
@@ -277,23 +301,32 @@ label {
     }
 
     .Cartelera {
-        display: grid;
-        grid-template-columns: 100%;
-        gap: 1%;
+        display: flex;
+        padding: 1%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 95%;
     }
 
-
+    .Cartelera img {
+        width: 90vw;
+        
+    }
 }
 
 
 @media only screen and (min-width: 500px) {
 
     .Cartelera {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        gap: 1%;
+        display: flex;
+        padding: 1%;
+        height: 100%;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        align-content: center;
+        width: 95%;
     }
 
     .DefaultBoxContent {
@@ -303,6 +336,10 @@ label {
         align-items: center;
         width: 100%;
         text-align: justify;
-    
+    }
+
+    .Cartelera img {
+        width: 40vw;
+        
     }
 }
