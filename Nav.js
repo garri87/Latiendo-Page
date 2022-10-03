@@ -11,11 +11,11 @@
     const contacto = createNavLink("Contacto");
     
     inicio.setAttribute("href", "index.html");
-    quienes.setAttribute("href", "#quienes");
-    mision.setAttribute("href", "#mision");
-    contacto.setAttribute("href", "#contacto");
+    quienes.setAttribute("href", "index.html#quienes");
+    mision.setAttribute("href", "index.html#mision");
+    contacto.setAttribute("href", "index.html#contacto");
     relatos.setAttribute("href", "Relatos.html");
-    novedades.setAttribute("href", "#novedades");
+    novedades.setAttribute("href", "index.html#novedades");
 
 
     header.appendChild(nav);
